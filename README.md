@@ -2,6 +2,7 @@
 Project 2 For BME 450 Winter 2020
 
 Code URL: https://github.com/etomlin27/Meteorology_Project_2/blob/master/Tomlin_Project2_Meteo.ipynb
+
 README URL: https://github.com/etomlin27/Meteorology_Project_2/blob/master/README.md
 
 ## Problem Statement:
@@ -44,22 +45,25 @@ These times can then be compared between the two sites to determine cross corril
 
 Conducting the same analysis on the rain, a similer pattern emerges. As seen in figure 4, the rain's maximum correlation also occurs at lag 1 with a maximum value of 0.634. This is a moderatly strong correlation, but less so than the wind. This observation suggests that the rain does not behave quite the same way as the wind, and may dissipate between sites. Overall, the rain is still corellated and, interestingly, opposite of the wind in that the higher rain rates occur inland. Once again this is consistant with expectations as rain is usually formed as a result of atmospheric pressure changes that are more prevelant as a result of elevation and thermal changes from landmasses.
 
-[alt text](https://github.com/etomlin27/Meteorology_Project_2/blob/master/Rain_Correlation.png)
+![alt text](https://github.com/etomlin27/Meteorology_Project_2/blob/master/Rain_Correlation.png)
 
 *Figure 4: Wind Correlation Data.*
 
-Regardless of the season, the maximum value for the speed of sound occured at the lowest depth for the deep sensors and the surface depth for the shallow sensors. This is likely due to the minimum value occuring between the two sensors and thus each sensor only displayes the upper or lower end of the curve. 
+As both correlation maxes were significantly above the rest of the data, and both occured at lag one, it can be concluded that there is a relationship between the lag of the wind and the lag of the rain.
 
-The effects of day vs. night could not be analyzed do to time constraints restricting the conversion of the instrument time to local time. The expected effect is that in the daytime as temperatures at the surface are higher, the speed of sound profile will shift up slightly. This effect is expected to be much less in magnitude than the similer influence of the differing season, but follow the same reasoning. The increased temperature lowers the density near the surface, but has little effect in the depths and thus raises the depth with the minimum speed of sound.
+In order to determine the validity of the data and develop a weather profile of monthly averages across the year. Figure 5 shows that the rainiest month is December and the dryest month is August. The windiest month is January and the calmist month is August. This follows the expected pattern for the west coast of the United States with wet windy winters and dryer, calmer summers. With the exception of September, all four parameters also follow each other, reinforcing their correlation.
 
+![alt text](https://github.com/etomlin27/Meteorology_Project_2/blob/master/Monthly_Averages.png)
+
+*Figure 5: Monthly Averages.*
 
 ## Conclusion:
 
-Temperature changes in the ocean, usually as a result of solar radiation measured at different times of day and different seasons in the year, has a dominant effect on the speed of sound through the water. As the temperature of the ocean in increased, especially near the surface, the speed of sound profile shifts up. This is further illistrated by examining the formula for calculating the speed of sound in water as seen in equation (1). It can then be extrapolated that further effects on ocean temperature from climate change and pollution can have a dramatic affect on the acoustic properties of the water. This in turn, will likely have a severe adverse affect on any marine life that depends on the accoustic properties for their wellbeing and survival.
+Weather systems are large scale events that can be tracked by using multiple instrument stations and determinind correlation between them. In the case of the Oregon observitories used, there is a strong correlation between the rain and wind between the two offshore locations.
 
 ## References:
 
 https://ooinet.oceanobservatories.org/
 https://www.noaa.gov/
-
+https://water.usgs.gov/edu/activity-howmuchrain-metric.html
 https://stackoverflow.com/
